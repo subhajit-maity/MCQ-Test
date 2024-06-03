@@ -42,7 +42,6 @@ const FileUploadPage = () => {
     <div className="w-full max-w-md mx-auto">
       <div
         id="upload-area"
-        className="border-4 border-dashed border-gray-300 rounded-lg p-6 flex flex-col justify-center items-center cursor-pointer"
         onDragEnter={preventDefaults}
         onDragOver={preventDefaults}
         onDragLeave={preventDefaults}
@@ -56,10 +55,13 @@ const FileUploadPage = () => {
           multiple
           onChange={handleInputChange}
         />
-        <div className="text-center">
-          <p className="text-gray-500">
-            Drag and drop files here or click to upload
-          </p>
+        <div>
+          <img
+            src={
+              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCqWQ8aIoJU0ndKdMaocZq0VLYQHUHoCN-eQ&s"
+            }
+            className="rounded-full w-12 h-12 mx-auto mb-4"
+          />
         </div>
       </div>
       <ul className="mt-4">
